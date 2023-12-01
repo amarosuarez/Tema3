@@ -10,7 +10,7 @@ public class Sejercicio02 {
 	public static void main(String[] args) {
 		// Variables donde se almacenarán los números introducidos por el usuario
 		int num1, num2;
-		double num1d, num2d;
+		double num1d, num2d, num3d;
 		
 		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
@@ -30,10 +30,13 @@ public class Sejercicio02 {
 			System.out.println("Introduce otro número con decimales");
 			num2d = sc.nextDouble();
 			
+			System.out.println("Introduce otro número con decimales");
+			num3d = sc.nextDouble();
 			
-			System.out.println("El resultado de la suma de enteros es " + Suma.suma(num1, num2));
 			
-			System.out.println("El resultado de la suma de números con decimales es " + Suma.suma(num1d, num2d));
+			System.out.println("El resultado de la media de enteros es " + Media.media(num1, num2));
+			
+			System.out.println("El resultado de la media de números con decimales es " + Media.media(num1d, num2d, num3d));
 			
 			
 		} catch (InputMismatchException e) {

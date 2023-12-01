@@ -30,9 +30,9 @@ public class Sejercicio01 {
 			num2d = sc.nextDouble();
 			
 			// Imprimimos los mensajes por pantalla
-			System.out.println("El resultado de la media de enteros es " + Media.media(num1, num2));
+			System.out.println("El resultado de la media de enteros es " + Suma.suma(num1, num2));
 			
-			System.out.println("El resultado de la media de números con decimales es " + Media.media(num1d, num2d));
+			System.out.println("El resultado de la media de números con decimales es " + Suma.suma(num1d, num2d));
 		} catch(InputMismatchException e) {
 			System.out.println("Datos erróneos");
 		}

@@ -1,13 +1,16 @@
-package sejercicio03;
+package sejercicio04;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Sejercicio03 {
+public class Sejercicio04 {
 
 	public static void main(String[] args) {
-		// Variables donde se almacenarán los números introducidos por el usuario
-		int num1, num2;
+		// Variables donde se almacenarán los números
+		int num1;
+		// Variable donde se almacenará la cadena de texto
+		String cadena;
+		
 		
 		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
@@ -18,12 +21,14 @@ public class Sejercicio03 {
 			System.out.println("Introduzca un número entero");
 			num1 = sc.nextInt();
 			
-			System.out.println("Introduzca otro número entero");
-			num2 = sc.nextInt();
+			// Imprimimos el mensaje por pantalla
+			System.out.println(ParseToBoolean.parseToBoolean(num1));
 			
-			System.out.println("La suma de los números desde 1 a " + num1 + " es " + SumaEnteros.sumaEnteros(num1));
+			System.out.println("Escriba true o false");
+			cadena = sc.next();
 			
-			System.out.println("La suma de los números comprendidos entre ambos números es: " + SumaEnteros.sumaEnteros(num1, num2));
+			// Imprimimos el mensaje por pantalla
+			System.out.println(ParseToBoolean.parseToBoolean(cadena));
 			
 		} catch(InputMismatchException e) {
 			System.out.println("Datos erróneos");
